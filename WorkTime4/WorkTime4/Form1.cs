@@ -22,6 +22,9 @@ namespace WorkTime4
         {
             InitializeComponent();
             jManager = new JobManager();
+            string[] amPmOptions = new string[] { "AM", "PM" };
+            amPmList.Items.AddRange(amPmOptions);
+            amPmList.SelectedIndex = 0;
         }
 
         private void btnAddJob_Click(object sender, EventArgs e)
@@ -70,7 +73,7 @@ namespace WorkTime4
         private void textTimeChanged(object sender, EventArgs e)
         {
             string currentString = textTimeEntry.Text;
-            
+
             if (lastKeyPressed == "\b" || currentString.Length == 0)
             {
                 return;
@@ -90,7 +93,7 @@ namespace WorkTime4
                 textTimeEntry.Text = prevTimeString;
                 return;
             }
-            else if(currentString[0] == '1' && currentString.Length > 5)
+            else if (currentString[0] == '1' && currentString.Length > 5)
             {
                 textTimeEntry.Text = prevTimeString;
                 return;

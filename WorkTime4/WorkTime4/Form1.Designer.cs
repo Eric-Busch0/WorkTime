@@ -38,6 +38,7 @@ namespace WorkTime4
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textTimeEntry = new System.Windows.Forms.TextBox();
             this.labelStartTime = new System.Windows.Forms.Label();
+            this.amPmList = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,7 +105,7 @@ namespace WorkTime4
             this.textTimeEntry.ForeColor = System.Drawing.Color.DimGray;
             this.textTimeEntry.Location = new System.Drawing.Point(81, 91);
             this.textTimeEntry.Name = "textTimeEntry";
-            this.textTimeEntry.Size = new System.Drawing.Size(201, 23);
+            this.textTimeEntry.Size = new System.Drawing.Size(104, 23);
             this.textTimeEntry.TabIndex = 9;
             this.textTimeEntry.Text = "Time HH:MM";
             this.textTimeEntry.TextChanged += new System.EventHandler(this.textTimeChanged);
@@ -121,12 +122,21 @@ namespace WorkTime4
             this.labelStartTime.TabIndex = 10;
             this.labelStartTime.Text = "Start Time";
             // 
+            // amPmList
+            // 
+            this.amPmList.FormattingEnabled = true;
+            this.amPmList.Location = new System.Drawing.Point(192, 90);
+            this.amPmList.Name = "amPmList";
+            this.amPmList.Size = new System.Drawing.Size(70, 23);
+            this.amPmList.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.amPmList);
             this.Controls.Add(this.labelStartTime);
             this.Controls.Add(this.textTimeEntry);
             this.Controls.Add(this.jobName);
@@ -153,6 +163,7 @@ namespace WorkTime4
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textTimeEntry;
         private System.Windows.Forms.Label labelStartTime;
+        private System.Windows.Forms.ComboBox amPmList;
     }
 }
 

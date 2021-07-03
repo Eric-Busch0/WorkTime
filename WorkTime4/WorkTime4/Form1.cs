@@ -15,7 +15,9 @@ namespace WorkTime4
         private JobManager jManager;
         private string timeEntryDefault = "Time HH:MM";
         private string jobNameDefault = "Enter Job Name...";
-
+        private string prevTimeString = "";
+        private string lastKeyPressed;
+        private string allowableTimeChars = "1234567890:";
         public Form1()
         {
             InitializeComponent();
@@ -49,7 +51,7 @@ namespace WorkTime4
 
         private void jobNameLeave(object sender, EventArgs e)
         {
-            if(textJobName.Text.Length == 0)
+            if (textJobName.Text.Length == 0)
             {
                 textJobName.Text = jobNameDefault;
                 textJobName.ForeColor = Color.DimGray;
@@ -67,7 +69,53 @@ namespace WorkTime4
 
         private void textTimeChanged(object sender, EventArgs e)
         {
+            string currentString = textTimeEntry.Text;
+            
+            if (lastKeyPressed == "\b" || currentString.Length == 0)
+            {
+                return;
+            }
 
+            foreach (char c in currentString)
+            {
+                if (!allowableTimeChars.Contains(c.ToString()))
+                {
+                    textTimeEntry.Text = prevTimeString;
+                    return;
+                }
+            }
+
+            if (currentString[0] > '1' && currentString.Length > 4)
+            {
+                textTimeEntry.Text = prevTimeString;
+                return;
+            }
+            else if(currentString[0] == '1' && currentString.Length > 5)
+            {
+                textTimeEntry.Text = prevTimeString;
+                return;
+            }
+
+            if (currentString.Length < 2 && currentString.Length != 0)
+            {
+                if (currentString[0] > '1')
+                {
+                    textTimeEntry.Text += ":";
+                }
+
+
+            }
+            else if (currentString.Length == 2 && !currentString.Contains(":"))
+            {
+                textTimeEntry.Text += ":";
+            }
+            textTimeEntry.SelectionStart = textTimeEntry.Text.Length;
+            prevTimeString = currentString;
+        }
+
+        private void keyPressEvent(object sender, KeyPressEventArgs e)
+        {
+            lastKeyPressed = e.KeyChar.ToString();
         }
     }
 }

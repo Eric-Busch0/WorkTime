@@ -109,6 +109,7 @@ namespace WorkTime4
             this.textTimeEntry.Text = "Time HH:MM";
             this.textTimeEntry.TextChanged += new System.EventHandler(this.textTimeChanged);
             this.textTimeEntry.Enter += new System.EventHandler(this.StartTimeEnter);
+            this.textTimeEntry.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressEvent);
             this.textTimeEntry.Leave += new System.EventHandler(this.startTimeLeave);
             // 
             // labelStartTime

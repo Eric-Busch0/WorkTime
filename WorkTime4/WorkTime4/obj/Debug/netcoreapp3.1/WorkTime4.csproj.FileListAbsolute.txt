@@ -1,0 +1,16 @@
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.csprojAssemblyReference.cache
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.Form1.resources
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.Properties.Resources.resources
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.csproj.GenerateResource.cache
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.AssemblyInfoInputs.cache
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.AssemblyInfo.cs
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.csproj.CoreCompileInputs.cache
+C:\WorkTime\WorkTime4\WorkTime4\bin\Debug\netcoreapp3.1\WorkTime4.exe
+C:\WorkTime\WorkTime4\WorkTime4\bin\Debug\netcoreapp3.1\WorkTime4.deps.json
+C:\WorkTime\WorkTime4\WorkTime4\bin\Debug\netcoreapp3.1\WorkTime4.runtimeconfig.json
+C:\WorkTime\WorkTime4\WorkTime4\bin\Debug\netcoreapp3.1\WorkTime4.runtimeconfig.dev.json
+C:\WorkTime\WorkTime4\WorkTime4\bin\Debug\netcoreapp3.1\WorkTime4.dll
+C:\WorkTime\WorkTime4\WorkTime4\bin\Debug\netcoreapp3.1\WorkTime4.pdb
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.dll
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.pdb
+C:\WorkTime\WorkTime4\WorkTime4\obj\Debug\netcoreapp3.1\WorkTime4.genruntimeconfig.cache

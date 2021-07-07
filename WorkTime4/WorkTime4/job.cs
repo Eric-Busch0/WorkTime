@@ -8,7 +8,8 @@ namespace WorkTime4
     {
         public string jobName;
         public DateTime startTime;
-        public DateTime endTime;
+        public string time;
+
 
 
         public job(string newJobName, DateTime newStartTime)

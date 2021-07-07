@@ -13,6 +13,7 @@ namespace WorkTime4
     public partial class Form1 : Form
     {
         private JobManager jManager;
+        private JobLog jLogger;
         private string timeEntryDefault = "Time HH:MM";
         private string jobNameDefault = "Enter Job Name...";
         private string prevTimeString = "";
@@ -20,20 +21,38 @@ namespace WorkTime4
         private string allowableTimeChars = "1234567890:";
         public Form1()
         {
+
             InitializeComponent();
             jManager = new JobManager();
+            jLogger = new JobLog();
             string[] amPmOptions = new string[] { "AM", "PM" };
             amPmList.Items.AddRange(amPmOptions);
             amPmList.SelectedIndex = 0;
         }
+        public DateTime getDateTime(DateTime date, string time, string amPm)
+        {
+            time += " " + amPm;
 
+            DateTime time = DateTime.ParseExact(NewString, "hh:mm tt", CultureInfo.InvariantCulture);
+
+
+            DateTime dt = new DateTime(date.Year, date.Month, date.Day, time.Hour, time.Minute, time.Second);
+
+            return dt;
+        }
         private void btnAddJob_Click(object sender, EventArgs e)
         {
             // add some job infor like time and shit
             string name = textJobName.Text;
-            DateTime time = dateTimeJobStart.Value;
+            int month = dateTimeJobStart.Value.Month
+            int day = dateTimeJobStart.Value.Day;
+            int year = dateTimeJobStart.Value.Year;
 
-
+            string time = textTimeEntry.Text;
+            string am_or_pm = amPmList.Text.ToLower();
+            DateTime start_time = getDateTime(dat)
+            job newJob = new job(name, );
+            jLogger.userJobs.Add()
         }
 
         private void jobNameEnter(object sender, EventArgs e)

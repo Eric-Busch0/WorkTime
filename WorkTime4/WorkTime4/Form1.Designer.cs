@@ -53,7 +53,7 @@ namespace WorkTime4
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox2.Location = new System.Drawing.Point(288, 33);
+            this.richTextBox2.Location = new System.Drawing.Point(324, 33);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(444, 367);
             this.richTextBox2.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace WorkTime4
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(800, 451);
             this.pictureBox1.TabIndex = 8;
